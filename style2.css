@@ -1,0 +1,135 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+div {
+  text-align: justify;
+}
+
+.foto {
+  border-radius: 10px 5% / 20px;
+  display: flex;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  align-items:inherit;
+  display: grid;
+  grid-row: 1 / 5;
+  position: relative;
+  border: rgb(246, 173, 180) solid 2px;
+  }
+
+/* Header/logo Title */
+.header {
+  padding: 50px;
+  text-align:center;
+  background: rgba(246, 173, 180, 0.144);
+  color: rgb(82, 82, 82);
+}
+
+.nome  {
+  display: grid;
+  grid-template-columns: repeat(1fr, 4);
+  grid-gap: 6px;
+  position: absolute;
+  top: 150px;
+  right: 50%;
+  border-bottom: rgb(246, 173, 180) 2px solid;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    border-radius: 50%;
+    border: rgb(246, 173, 180) solid 2px;;
+  }
+
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #F6ADB4;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: #313131;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #A8656C;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #ffe3e077;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #6d95a8cc;
+  width: 60%;
+  padding: 15px;
+}
+
+
+.carousel-item{
+  background-color: #6d95a8cc;
+  width: 60%;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #A8656C;
+}
+
+.icones {
+  border-radius: 50%;
+  display: auto;
+}
+
+a {
+  text-decoration:none;
+  color: #313131;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar, .header {   
+    flex-direction: column;
+  }
+}
